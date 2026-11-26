@@ -1,0 +1,40 @@
+{
+  "checked": 3,
+  "empty_file_list": false,
+  "all_ok": true,
+  "files": [
+    {
+      "file": "PC3B886D.JPG",
+      "ok": true,
+      "expected_bytes": 10643492,
+      "status": "13",
+      "valid": true,
+      "size": 10643492,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "abb75a84db7b33cb390c18ed8302bdbff6fc2c9745c8f18fd9d1214e28584474"
+    },
+    {
+      "file": "PC0B886D.JPG",
+      "ok": true,
+      "expected_bytes": 10658299,
+      "status": "13",
+      "valid": true,
+      "size": 10658299,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "63e0443de68f33f1ef010180b9be44e5b386c0d5be7d52a15b12b16468c88be9"
+    },
+    {
+      "file": "PC1B886D.JPG",
+      "ok": true,
+      "expected_bytes": 10682692,
+      "status": "13",
+      "valid": true,
+      "size": 10682692,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "08b16c86733b6c82feb388ade13cd812b7b3c368588ab6c7ad57c62dd0b8dc30"
+    }
+  ]
+}

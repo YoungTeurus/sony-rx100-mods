@@ -1,0 +1,69 @@
+STATE t=108 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=2257 cam=0 drive=0xffffffff half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=2318 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=7427 cam=0 drive=0xffffffff half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=7487 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=7749 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=7808 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=9319 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=0 r_act=0
+STATE t=9378 cam=1 drive=0x5f half=0x1 full=0x1 tog=1 gate=0 r_act=0
+STATE t=9443 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=10890 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=0
+STATE t=14768 cam=1 drive=0x5f half=0x0 full=0x0 tog=0 gate=0 r_act=0
+STATE t=15310 cam=1 drive=0x5f half=0x1 full=0x0 tog=0 gate=0 r_act=0
+STATE t=15430 cam=1 drive=0x5f half=0x0 full=0x0 tog=0 gate=0 r_act=0
+STATE t=18400 cam=1 drive=0x5f half=0x1 full=0x0 tog=0 gate=0 r_act=0
+STATE t=19057 cam=1 drive=0x5f half=0x1 full=0x1 tog=0 gate=0 r_act=0
+STATE t=19186 cam=1 drive=0x5f half=0x0 full=0x0 tog=0 gate=0 r_act=0
+STATE t=21848 cam=1 drive=0x5f half=0x1 full=0x0 tog=0 gate=0 r_act=0
+STATE t=21978 cam=1 drive=0x5f half=0x0 full=0x0 tog=0 gate=0 r_act=0
+STATE t=26328 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=0
+STATE t=27468 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=1 r_act=0
+STATE t=27532 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=0
+STATE t=29421 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=30862 cam=1 drive=0x5e half=0x1 full=0x0 tog=1 gate=0 r_act=0
+STATE t=33100 cam=1 drive=0x5e half=0x1 full=0x1 tog=1 gate=0 r_act=0
+STATE t=33234 cam=1 drive=0x5e half=0x1 full=0x0 tog=1 gate=0 r_act=0
+STATE t=33289 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=35938 cam=1 drive=0x5e half=0x1 full=0x0 tog=1 gate=0 r_act=0
+STATE t=36059 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=38354 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=0
+STATE t=40399 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=1 r_act=0
+RING_START t=40596 seq=1
+STATE t=41141 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=0 r_act=1
+STATE t=41679 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=1 r_act=1
+RING_EVT t=42648 seq=1 ev=PHASE a=0 b=1 c=0 d=0
+RING_EVT t=42901 seq=1 ev=READY a=2290 b=2 c=2 d=2290
+STATE t=61261 cam=1 drive=0x5f half=0x1 full=0x1 tog=1 gate=1 r_act=1
+RING_EVT t=61278 seq=1 ev=PHASE a=1 b=2 c=7 d=0
+RING_EVT t=61278 seq=1 ev=TRIGGER a=20649 b=2 c=1 d=0
+RING_EVT t=61570 seq=1 ev=PHASE a=2 b=3 c=9 d=0
+STATE t=61849 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=1
+RING_FILE t=67188 seq=1 file=PC3B886D.JPG drive=65 bytes=10643492 status=13
+RING_FILE t=72929 seq=1 file=PC0B886D.JPG drive=65 bytes=10658299 status=13
+RING_FILE t=78681 seq=1 file=PC1B886D.JPG drive=65 bytes=10682692 status=13
+RING_EVT t=82691 seq=1 ev=PHASE a=3 b=4 c=14 d=0
+RING_EVT t=82691 seq=1 ev=SUMMARY a=1 b=14 c=5 d=196608
+STATE t=83010 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=1
+STATE t=83478 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=1
+RING_EXIT t=83528 seq=1 rc=0 sig=0 unres=0 fault=0
+STATE t=86008 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=1 r_act=0
+RING_START t=86192 seq=2
+STATE t=86760 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=0 r_act=1
+STATE t=87248 cam=1 drive=0x5f half=0x1 full=0x0 tog=1 gate=1 r_act=1
+RING_EVT t=87863 seq=2 ev=PHASE a=0 b=1 c=0 d=0
+RING_EVT t=88139 seq=2 ev=READY a=1930 b=2 c=2 d=1930
+STATE t=108338 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=1
+RING_EVT t=108398 seq=2 ev=PHASE a=1 b=3 c=8 d=4
+RING_EVT t=110218 seq=2 ev=PHASE a=3 b=4 c=8 d=4
+RING_EVT t=110218 seq=2 ev=SUMMARY a=0 b=8 c=6 d=4
+STATE t=110377 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=1
+STATE t=110470 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=1 r_act=1
+RING_EXIT t=110909 seq=2 rc=0 sig=0 unres=0 fault=0
+STATE t=116433 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=117148 cam=0 drive=0xffffffff half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=117268 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=201018 cam=0 drive=0xffffffff half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=201078 cam=1 drive=0x5e half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STATE t=201389 cam=1 drive=0x5f half=0x0 full=0x0 tog=1 gate=0 r_act=0
+STOP t=216981 reason=stop_file r_runs=2 r_ok=2 r_sav=3 r_flt=0 r_unres=0 trunc=0

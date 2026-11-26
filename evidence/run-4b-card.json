@@ -1,0 +1,227 @@
+{
+  "checked": 20,
+  "empty_file_list": false,
+  "all_ok": true,
+  "files": [
+    {
+      "file": "PC6D6577.JPG",
+      "ok": true,
+      "expected_bytes": 9862037,
+      "status": "13",
+      "valid": true,
+      "size": 9862037,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "7d8f19aeada6ae382efaf124e69711dba7330aac80209fdc6cd68d7c390cc81b"
+    },
+    {
+      "file": "PC6D6574.JPG",
+      "ok": true,
+      "expected_bytes": 9950035,
+      "status": "13",
+      "valid": true,
+      "size": 9950035,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "6afd7440d9c0b63b7f245aa832449deafd3473af3ca8a24ac1daa7f1f1f203eb"
+    },
+    {
+      "file": "PC6D6575.JPG",
+      "ok": true,
+      "expected_bytes": 9936444,
+      "status": "13",
+      "valid": true,
+      "size": 9936444,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "37d2e084e803a93e544d85dd629d4317c51dc723f12bdc06eb3a7c4e5be79d73"
+    },
+    {
+      "file": "PC6D6572.JPG",
+      "ok": true,
+      "expected_bytes": 10072157,
+      "status": "13",
+      "valid": true,
+      "size": 10072157,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "ef66c90cbf8a2cbc47536d78a26b9805d0f057a5c0333fcb568336932b5aab75"
+    },
+    {
+      "file": "PC6D6573.JPG",
+      "ok": true,
+      "expected_bytes": 9840509,
+      "status": "13",
+      "valid": true,
+      "size": 9840509,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "8701b9f791999629c15d9382643c74389edbed2578681fad7a0da5efecbe1614"
+    },
+    {
+      "file": "PC6D6570.JPG",
+      "ok": true,
+      "expected_bytes": 9630755,
+      "status": "13",
+      "valid": true,
+      "size": 9630755,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "064d90814a8323a48c301d73b3be8510d2965b477518d1ad8d1d009fdc7e0a57"
+    },
+    {
+      "file": "PC6D6571.JPG",
+      "ok": true,
+      "expected_bytes": 10002646,
+      "status": "13",
+      "valid": true,
+      "size": 10002646,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "991ea84ffd5e4d5f2d027b3c4c93150b1cd2265655d9204307d30aac27a46099"
+    },
+    {
+      "file": "PC6D657E.JPG",
+      "ok": true,
+      "expected_bytes": 10046370,
+      "status": "13",
+      "valid": true,
+      "size": 10046370,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "66dc713f20d640f49b87fd1109603c45d86a089642233665383b0093a92089d0"
+    },
+    {
+      "file": "PC6D657F.JPG",
+      "ok": true,
+      "expected_bytes": 9873575,
+      "status": "13",
+      "valid": true,
+      "size": 9873575,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "0335e6325cc0226988c3c52b5b528fed004ca9928eb173e13fe4139e37139ce5"
+    },
+    {
+      "file": "PC6D657C.JPG",
+      "ok": true,
+      "expected_bytes": 9755389,
+      "status": "13",
+      "valid": true,
+      "size": 9755389,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "af059114f40c184ad9bf1a131a801fa7a383047ca2dd29e06744e82f7fc2d99d"
+    },
+    {
+      "file": "PC6D657D.JPG",
+      "ok": true,
+      "expected_bytes": 9695207,
+      "status": "13",
+      "valid": true,
+      "size": 9695207,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "232908718de37a3f1c52990cfd318b030600573bee8ae1dff6067a612b7f1f64"
+    },
+    {
+      "file": "PC6D657A.JPG",
+      "ok": true,
+      "expected_bytes": 9795477,
+      "status": "13",
+      "valid": true,
+      "size": 9795477,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "2b118105a27d46b2fe2d8af0b50b32eaa3ef77d16c0e0358a682d63619e5bd34"
+    },
+    {
+      "file": "PC6D657B.JPG",
+      "ok": true,
+      "expected_bytes": 9885244,
+      "status": "13",
+      "valid": true,
+      "size": 9885244,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "5ab641b7e1aad47c0587a23b8d3e2c31cb65e7d8c8d490842d193f8adb4d7993"
+    },
+    {
+      "file": "PC6D6578.JPG",
+      "ok": true,
+      "expected_bytes": 9934811,
+      "status": "13",
+      "valid": true,
+      "size": 9934811,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "2be3576c1b69223aa9ec3dd2a3292a7e496dde6bcf9ebc7d45b5bd5d2c2bd20c"
+    },
+    {
+      "file": "PC6D6579.JPG",
+      "ok": true,
+      "expected_bytes": 9983854,
+      "status": "13",
+      "valid": true,
+      "size": 9983854,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "d6af97c368dfb6403399b8091b1521c0c63b523eea0433c09ec6bd0551f894bd"
+    },
+    {
+      "file": "PC6D6566.JPG",
+      "ok": true,
+      "expected_bytes": 9966514,
+      "status": "13",
+      "valid": true,
+      "size": 9966514,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "11dcfdcb0406cafb823dc31555a3ff244a9e91d0332d57fbbf6385a5cab2b2b9"
+    },
+    {
+      "file": "PC6D6567.JPG",
+      "ok": true,
+      "expected_bytes": 9913812,
+      "status": "13",
+      "valid": true,
+      "size": 9913812,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "4da2e7974cf83a4e8cad0cf5ea9232fdfb255aa0e35fd17ad29e196b35605cf5"
+    },
+    {
+      "file": "PC6D6564.JPG",
+      "ok": true,
+      "expected_bytes": 9945351,
+      "status": "13",
+      "valid": true,
+      "size": 9945351,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "5d4f792dfe5ece02318534fa4932b26c4712c625949b32155403fe59d82de081"
+    },
+    {
+      "file": "PC6D6565.JPG",
+      "ok": true,
+      "expected_bytes": 9828859,
+      "status": "13",
+      "valid": true,
+      "size": 9828859,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "471568c5833d0688245d6e4f3ba893cf6e1c65278baf6a7d21b04e9eeb0e3fc9"
+    },
+    {
+      "file": "PC6D6562.JPG",
+      "ok": true,
+      "expected_bytes": 9908347,
+      "status": "13",
+      "valid": true,
+      "size": 9908347,
+      "width": 5472,
+      "height": 3648,
+      "sha256": "171d444e8f052c36419d7a103fa8af5e8b68e3481c908036ab2a3aebbb91d1dd"
+    }
+  ]
+}
