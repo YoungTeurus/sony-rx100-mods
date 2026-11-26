@@ -1,0 +1,19 @@
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+
+# Local third-party checkouts & user-extracted Sony firmware (never commit)
+sources/
+extracted/
+downloads/
+
+# Runtime session receipts & temporary operator logs
+work/stage6-menu/wip1/
+work/stage6-menu/wip2/
+
+# Intermediate compiler artifacts & OS clutter
+*.o
+prototype-stage6-autonomy/out-v2/sony_pins.h
+.DS_Store

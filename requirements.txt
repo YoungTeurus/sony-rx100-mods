@@ -1,0 +1,13 @@
+# Host runtime dependencies for Stage 6 USB launcher / collector & Sony-PMCA-RE
+pyusb>=1.2.1
+libusb-package>=1.0.26
+pyelftools>=0.31
+asn1crypto>=1.5.1
+pycryptodomex>=3.20.0
+tlslite-ng>=0.8.2
+PyYAML>=6.0
+certifi>=2024.0.0
+
+# Optional: offline ARM emulation test suites (test_stage6_probe.py, test_stage6_v2.py)
+# unicorn>=2.1.0
+# capstone>=5.0.0
