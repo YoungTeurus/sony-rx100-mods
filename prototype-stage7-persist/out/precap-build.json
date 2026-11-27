@@ -1,0 +1,15 @@
+{
+  "bytes": 564,
+  "file": "PreCapture.mod",
+  "host_source_hashes": {
+    "prototype-stage7-persist/build_precap_mod.py": "af280f71467a6bc5f7254a9c586007f03d806fea8c842043e666c9614885bb20",
+    "prototype-stage7-persist/test_stage7_unicorn.py": "a8a15755b5a7312bf816b5660448b93aafc9a07b278baa29e556ac6fb928f7d7"
+  },
+  "native_source_hashes": {
+    "prototype-stage7-persist/precap_mod.c": "8b8270e200f4ef2270fc9e6f1fd2cd002a936f042f0f9c5b9bae3b807024525e",
+    "prototype-stage7-persist/stage7_common.h": "b4a8685a7e941c31f94450e80fd6e03f0a1b72e1259fd45cf76710b148b2718c",
+    "sources/bionz-x-research/tools/native_camera/mlv2/mod_v2.ld": "1c447c418cfaa6b0b9b178385095299848b4bb2a62f14076c1b011c1e202660b"
+  },
+  "scope": "standalone Pre-Capture settings module",
+  "sha256": "208b5aa074017f078816a2a173471f38d1af55bfa90672c1eb757a91fa6d4356"
+}

@@ -1,0 +1,123 @@
+{
+  "artifacts": {
+    "boot_script": {
+      "bytes": 19213,
+      "file": "mlv2_sd_boot.sh",
+      "sha256": "87cf24059f352d110e6624d9d41f75a1fd30e128eef0d61c5dc7631502e0f93f"
+    },
+    "card_ustar": {
+      "bytes": 204800,
+      "file": "card.ustar",
+      "members": {
+        "PreCapture.mod": {
+          "bytes": 552,
+          "sha256": "d0675d43978931ca1decd18d1b45faac1b3b83ee61f686d310eb4aa197deb957"
+        },
+        "core.bin": {
+          "bytes": 18424,
+          "sha256": "4cd97a78720c356cfeaf0051d4e906c2f52384e147b0ea254b5735aed3db8ef3"
+        },
+        "daemon": {
+          "bytes": 30320,
+          "sha256": "ded5221476b26b02897a9003103e57c93a577ba1cf7053d2abc4d8ac5f4138f3"
+        },
+        "guard": {
+          "bytes": 16792,
+          "sha256": "4b68c9a4c4f482a82103c57f7c55e5baff6be7711a0de8bbd833f58eae31a741"
+        },
+        "mlv2.req": {
+          "bytes": 1972,
+          "sha256": "03c0fd4802cc3c4b04aea79b6f63716cad0dd8a2625a2219a4ca9e1ebb931af4"
+        },
+        "ring.elf": {
+          "bytes": 122980,
+          "sha256": "3bc8f056c78e2b6dccb1131460c4fc2cf281b774d861250e6a8be0d2e61fe8c7"
+        }
+      },
+      "sha256": "ccd01c1f175351fc8e85bef3fea536917d48e8e969395df97db0874522ac1697"
+    },
+    "hook": {
+      "bytes": 2436,
+      "file": "mlv2_sd_boot_hook.so",
+      "init_array_va": "0x2448",
+      "sha256": "0cae4d4a0264952ad4ce0ef3a6f5764f8ad743d9c1e2ce6c6d034c0820281c32",
+      "syscalls": [
+        1,
+        2,
+        5,
+        6,
+        11,
+        33,
+        63,
+        66,
+        85,
+        114,
+        199
+      ]
+    },
+    "reader": {
+      "bytes": 13760,
+      "file": "mlv2_card_read.elf",
+      "sha256": "1f8bbd8fe627a24a4c115d8fdd7d6033eb8bfd40964b8de26c7082a5d4752b0f"
+    }
+  },
+  "owner_key_path": "/setting/mlv2_owner.key",
+  "phaseb_host_source_hashes": {
+    "prototype-stage7-persist/build_stage7_phaseb_persist.py": "c919bb1bb9af5238b1a0cf3ba33638282f98c6dfb80ccc8b1f22934c68fa0deb",
+    "prototype-stage7-persist/mlv2_card_read.c": "c329a63957009038bc7588212f8308180ee40c94179ac852135d01cae632d51e",
+    "prototype-stage7-persist/mlv2_phaseb_sd_boot.sh": "87cf24059f352d110e6624d9d41f75a1fd30e128eef0d61c5dc7631502e0f93f",
+    "prototype-stage7-persist/mlv2_sd_boot_hook.c": "2f76e824419845f4e29adeab4488b21df7548969aef032be0decb69161c782db",
+    "prototype-stage7-persist/test_stage7_phaseb_persist.py": "973f5cf9615baa4479fa292a4ec4e647ff525368ea2386147049acce91dfb526",
+    "scripts/m7_stage7_phaseb_install.py": "beb7db7a5fe0df5606b8da2bc5a72ddc2dd7b6d2503e3a641928cd331bb208b3"
+  },
+  "phaseb_native_source_hashes": {
+    "prototype-producer-probe/burst_cancel.c": "6e2c154cdcae906c83bc6b1072cd1a66d8e99aa108a77cf529df45b0389afe9a",
+    "prototype-producer-probe/capture_trap.c": "9503f2324e360b47d2321189dafd36407586054f164edc242e2a69fe1dd34aa9",
+    "prototype-producer-probe/commit.c": "079077f056893c221b0bc8aba75973e55342815dcb35e54508747a2879abc68e",
+    "prototype-producer-probe/end_register.c": "1de6512fc912f6deafa9a106773a83184d0a33e5623c21326bef96adb26045f6",
+    "prototype-producer-probe/hold.c": "e9d41f5c809d85f739eefe074b5ba0b898c74ca396930587d5f05568ea779d26",
+    "prototype-producer-probe/jpeg.c": "eca879e4b9faa61621a81872b766d4e6de6227e315d854afadcd513f918313dc",
+    "prototype-producer-probe/media.c": "3935e47f8273685f55cc9a4ebac54702d6b6543c5f9cde60ce1cda27a884524c",
+    "prototype-producer-probe/media_config.c": "b00aaa51ae07ee5453841a4a97b5af390f401d97c19de3bea98fdd9f5998d677",
+    "prototype-producer-probe/media_connect.c": "bc61de1ed14882ea86e651846193c4336b893d4b39b1fdeb23aef1a178e83078",
+    "prototype-producer-probe/media_create.c": "60975a5f2f8dba86171b8779312b8edc7d62d90d8ac8221cc6fb363f26148d2f",
+    "prototype-producer-probe/media_route.c": "6c9c8fd2825b2cd682af10cf1476257e207ff8d0f74bb3778c9f25106a62ea37",
+    "prototype-producer-probe/native.c": "6132481d6acb9c871e8834c108738c67c6a0ad3761858494f95fedac390cef71",
+    "prototype-producer-probe/ram_camera_state.c": "5dbe36eb0c43def75bd846b9a00ceb2220738bda9d75bb15ed90c46395b0ccdc",
+    "prototype-producer-probe/ram_capture.c": "d5768b69881d82e998af1c05b13bf02394c22d2bcec882cabab13a9ea1df04ee",
+    "prototype-producer-probe/ram_capture_wait_state.c": "d587fc28cc974f504ac49a2ab5eeee32e7f251d582fff395da59a5a810052ad8",
+    "prototype-producer-probe/ram_continuous.c": "766597d24a12bbde7b7b6485471009767b850e0cac644556145870093404c942",
+    "prototype-producer-probe/ram_pending_diagnostics.c": "be4e390c2147be2a3c91d8808e777f353820d8dfdb38838ca3d47dca18ef501c",
+    "prototype-producer-probe/ram_pin_lifecycle.c": "0c7b26875abb7f05a4500d891103dc37ebf6edf77ebbb26dd950ac7c5e58b1a0",
+    "prototype-producer-probe/ram_stop_diagnostics.c": "f3b476e8d826c4b21f9524e87fd83afd2d449d2ff754e3fbb3ce9f5694a4cec6",
+    "prototype-producer-probe/receiver.c": "1bd1cef0c1b8d449aeb4678fef08e7c7b3ace1076de5dbea1dda7304c38f1ea4",
+    "prototype-producer-probe/retain.c": "b617eca22bb5e29999243efc3736f771f7db60f31e83a378de20fce8b8323729",
+    "prototype-producer-probe/ring.c": "f1f6b02cda6fd2912cbf71e255eac8c8860acee63abf715f495ecb133b519e32",
+    "prototype-producer-probe/sd_input.c": "06a2eea3d81646a47620403d582bec77531a447ace798bc6b78c5d53868ef80f",
+    "prototype-producer-probe/shutter_start.c": "356ce5f06d86274ca074fbba0928e2fd786ba8dcceeaa9216e67414b0453f82f",
+    "prototype-producer-probe/source_native.c": "dbb737588a07f5042435b52782e30eebbbef006a24719092f359ba6779f6fabd",
+    "prototype-producer-probe/start_native.c": "80a366327ad87e332a28b491e522aacfb707700675aa6431f6fbbdbb869453c9",
+    "prototype-ring/src/pre_capture.c": "35095b01a857c39d5c79812364924f541561ea6ce00e1596a9429d90bac17645",
+    "prototype-ring/src/pre_capture.h": "025c028b5239b74f7570b0890d15874c332dac6956f8357f4df3e4e9ce351704",
+    "prototype-stage7-persist/core.c": "c8630f00ff96597d0435a7effc1bc79e08629d7b2191f30b1bdff6d08728afbe",
+    "prototype-stage7-persist/core.ld": "aa26ee4930bd008dbd921248f46b1d850e14e8fbd6f006e59549890a59e80dcf",
+    "prototype-stage7-persist/mlv2.h": "26703aba8abfdd90b3437f667b86404734c88f9abb75703238e5380f928dbd69",
+    "prototype-stage7-persist/mlv2_guard.c": "e1701c5dc4738fbd1cc319bda3b3ccb38ca06d5f6652849589fa7c8ca6436408",
+    "prototype-stage7-persist/mlv2_sys.h": "979cdbbcd0c7d14017a41bcc6534a3db057a8e8305f436cacdc038f776251ddf",
+    "prototype-stage7-persist/mlv2_trampoline.S": "4fc3ba5fd22e4b25b508ff781b807821d25c1a9652c98fdd5e3f87214842abbb",
+    "prototype-stage7-persist/precap_mod.c": "8b8270e200f4ef2270fc9e6f1fd2cd002a936f042f0f9c5b9bae3b807024525e",
+    "prototype-stage7-persist/shim.c": "ec9ac34f5447c6389f1c0839f9b43b081914e8d0fcacbcd46a58aecc0bb45fef",
+    "prototype-stage7-persist/shim.ld": "e6c06d74fdbe2de7f81e14eb1463f6f13d54dd433bbdef2b6709ccb3de1033bb",
+    "prototype-stage7-persist/stage7_common.h": "b4a8685a7e941c31f94450e80fd6e03f0a1b72e1259fd45cf76710b148b2718c",
+    "prototype-stage7-persist/stage7_daemon.c": "e7bde281e44533877e8f7a05f600e3ce2a219b268f694946cf0e145a516c42f2",
+    "prototype-stage7-persist/stage7_ring.c": "c9579aeb8911ac68ad68a20ca7fa4f632861dea91df984272d5c8ad25b9ba5fa",
+    "prototype-stage7-persist/stage7_v2_common.h": "a8b12acf4f8beabca4862a0a17150356f498b2a7e54a33d16935964ef5fa3a68",
+    "sources/bionz-x-research/tools/native_camera/mlv2/mod_v2.ld": "1c447c418cfaa6b0b9b178385095299848b4bb2a62f14076c1b011c1e202660b"
+  },
+  "ram_root": "/tmp_bt",
+  "scope": "Stage 7.3 Phase B persistent SD auto-boot release (/tmp_bt S2R-safe + bsa_server WBI trigger)",
+  "sd_boot_nonce": "5d0000000001",
+  "target": "DSC-RX100M7 1.00 (29110_03.2021050601)",
+  "test_key_signed_mlv2_tar_bytes": 204928,
+  "test_key_signed_mlv2_tar_sha256": "1011c92395f42682fcbc8ece3ab0b6873f051a437722675b60feec02f6bebcb1"
+}

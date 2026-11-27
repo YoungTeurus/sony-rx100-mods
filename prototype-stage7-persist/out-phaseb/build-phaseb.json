@@ -1,0 +1,43 @@
+{
+  "bytes": 2816,
+  "file": "phaseb_statfs.elf",
+  "host_source_hashes": {
+    "prototype-stage7-persist/build_precap_mod.py": "af280f71467a6bc5f7254a9c586007f03d806fea8c842043e666c9614885bb20",
+    "prototype-stage7-persist/build_stage7_phaseb.py": "443699067a30abc8d88c0a0dc5ce7fbb654d329c1782ffb79b106f9c603d53d7",
+    "prototype-stage7-persist/test_stage7_phaseb_collect.py": "2e0f9dd60b890c9f75e3c3d33949dfb83db24a7fdd76301c6de7293c0f243733",
+    "scripts/m7_stage7_phaseb_collect.py": "c009b341a67b0975cce862c6dbbd4a2be58e4f951da28f0dc4dff43bd8fd405c"
+  },
+  "kernel_slots": {
+    "196": [
+      "sys_lstat64",
+      "0x601c3434"
+    ],
+    "197": [
+      "sys_fstat64",
+      "0x601c346c"
+    ],
+    "248": [
+      "sys_exit_group",
+      "0x60138bd4"
+    ],
+    "266": [
+      "sys_statfs64_wrapper",
+      "0x6010e810"
+    ],
+    "4": [
+      "sys_write",
+      "0x601bf0f4"
+    ]
+  },
+  "md5": "34657c84de91710ba6282a47539849bd",
+  "native_source_hashes": {
+    "prototype-stage7-persist/phaseb_statfs.c": "e44486e70eb0288cecd6a043d2a39df6becac1012c5d123b248d1418e879c274"
+  },
+  "original_hashes": {
+    "evidence/m7-kernel-analysis/m7.kallsyms": "d4c990382c1071631863944ee8f09612e78542746d35b0ebe894d7d2bfcb546b",
+    "extracted/m7-kernel-file-20261105T210321Z-78319ef81a60/system/vmlinux.bin": "fbc91e66ce27ea917041c33c53e038bfc92e0cf8aea6f254f9dae01acefdfaeb"
+  },
+  "scope": "Offline filesystem inspector; no hardware qualification",
+  "sha256": "1310666d79e0301da773e966d611c4522ac88c3dacbe7cf00b2da69830ebb337",
+  "target": "DSC-RX100M7 29110_03.2021050601"
+}

@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "boot_script": {
+      "bytes": 17139,
+      "file": "mlv2_sd_boot.sh",
+      "sha256": "7e580aad8da187034ca07d5ae724360cadd7374669a4e9c4390634b064e9bffa"
+    },
+    "card_ustar": {
+      "bytes": 204800,
+      "file": "card.ustar",
+      "members": {
+        "PreCapture.mod": {
+          "bytes": 564,
+          "sha256": "208b5aa074017f078816a2a173471f38d1af55bfa90672c1eb757a91fa6d4356"
+        },
+        "core.bin": {
+          "bytes": 18484,
+          "sha256": "83ed0915faf5ba8715720867ec05395dbd8e3aa4be505624672ecc1377baa018"
+        },
+        "daemon": {
+          "bytes": 30340,
+          "sha256": "7903b9dfe1d8a529ed715332891f7a90c5174ef758005497634c5499d4a46e05"
+        },
+        "guard": {
+          "bytes": 16800,
+          "sha256": "f1c634067075345d2386127c77cbfebca5bc53fdf6dcd623feaa43fff41cf61b"
+        },
+        "mlv2.req": {
+          "bytes": 1992,
+          "sha256": "379a359ec218b97caa9d37ab6fed7b25164312fb412d444d61787ddb7f571e12"
+        },
+        "ring.elf": {
+          "bytes": 122980,
+          "sha256": "89c14ad4ac96323cd410f13951f0cf7956fdec78ef9856abeff229708823e9ee"
+        }
+      },
+      "sha256": "7c110dd396398045458ce7e9c411d3abc5ead319089334ecfb32bdc3ee0e881f"
+    },
+    "reader": {
+      "bytes": 13768,
+      "file": "mlv2_card_read.elf",
+      "sha256": "4aed6c1c511123d4d3abc30d3808ef681923507dea2c326412de739502082757"
+    }
+  },
+  "scope": "Stage 7.3 Phase A SD auto-boot bundle (RAM-only verification, zero flash writes)",
+  "sd_boot_nonce": "5d0000000001",
+  "sd_daemon_max_log_bytes": 65536,
+  "source_and_parent_seal_hashes": {
+    "prototype-stage7-persist/build_stage7_sd.py": "a100bc4b8eb68da10c8c31861da107c27f843fa4d50ac41a21dce7170ed18349",
+    "prototype-stage7-persist/mlv2_card_read.c": "c329a63957009038bc7588212f8308180ee40c94179ac852135d01cae632d51e",
+    "prototype-stage7-persist/mlv2_sd_boot.sh": "7e580aad8da187034ca07d5ae724360cadd7374669a4e9c4390634b064e9bffa",
+    "prototype-stage7-persist/out/build.json": "adc32760a4be13404facb8308147231dbc8679de366a44bdeed1e18625550e1b",
+    "prototype-stage7-persist/test_stage7_sd.py": "7ccf4090f4958e9b780619b4835baf36f3a4ceb5a620de9ac55766f794e10df9",
+    "scripts/m7_stage7_sd_probe.py": "007c993c4f108ac5263208bafb3c2e88a3c8153b66308a24cb76893cf93574db"
+  },
+  "target": "DSC-RX100M7 1.00 (29110_03.2021050601)",
+  "test_key_signed_mlv2_tar_bytes": 204928,
+  "test_key_signed_mlv2_tar_sha256": "94af23b8f9e77cd432b94a422536279896045c2ebb7182d37ae679dac857ee54"
+}

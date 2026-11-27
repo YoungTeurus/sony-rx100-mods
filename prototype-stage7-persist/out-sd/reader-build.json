@@ -1,0 +1,12 @@
+{
+  "bytes": 11848,
+  "file": "mlv2_card_read.elf",
+  "scope": "Stage 7.3 standalone read-only SD inspector",
+  "sha256": "b7d9f5106ec092f13ba38094cff5381e3b24779a64f85cd42610cc5861a0c227",
+  "source_and_parent_seal_hashes": {
+    "prototype-stage7-persist/build_stage7_sd.py": "86dfd0d52df7b2af0f3f36827f504b9555bdb0589c9b62164911169f6266fb7b",
+    "prototype-stage7-persist/mlv2_card_read.c": "0d0baa60654d9e4e037d072ffb208cb4232fa647689e8a8b4c8d9660100c6d36",
+    "prototype-stage7-persist/out/build.json": "2a6059cff31a7d24a03b98cbabfef212e714ec671eee004f81fc6b83d9f70dd3",
+    "prototype-stage7-persist/test_stage7_sd.py": "5a18ddefef7f902cf50d8523c518815ad7713169604bccb5e776f5f55727536b"
+  }
+}

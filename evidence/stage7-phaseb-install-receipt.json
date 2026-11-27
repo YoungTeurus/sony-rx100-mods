@@ -1,0 +1,272 @@
+{
+  "mode": "install",
+  "utc": "20261127T213907Z",
+  "nonce": "b98a5eb0d59f",
+  "owner_key_path": "~/.m7-phaseb-owner.key",
+  "owner_key_sha256_prefix": "b4ec763efb9c",
+  "card_ustar_sha256": "ccd01c1f175351fc8e85bef3fea536917d48e8e969395df97db0874522ac1697",
+  "commands": [
+    {
+      "step": 0,
+      "label": "disable_histfile",
+      "command": "HISTFILE=/dev/null"
+    },
+    {
+      "step": 1,
+      "label": "read_mounts",
+      "command": "/bin/busybox cat /proc/mounts"
+    },
+    {
+      "step": 2,
+      "label": "chmod_staged",
+      "command": "/bin/busybox chmod 755 /setting/mlv2_sd_boot_hook.so.new /setting/mlv2_sd_boot.sh.new /setting/mlv2_card_read.elf.new && /bin/busybox chmod 600 /setting/mlv2_owner.key.new"
+    },
+    {
+      "step": 3,
+      "label": "move_staged",
+      "command": "/bin/busybox mv -f /setting/mlv2_sd_boot_hook.so.new /setting/mlv2_sd_boot_hook.so && /bin/busybox mv -f /setting/mlv2_sd_boot.sh.new /setting/mlv2_sd_boot.sh && /bin/busybox mv -f /setting/mlv2_card_read.elf.new /setting/mlv2_card_read.elf && /bin/busybox mv -f /setting/mlv2_owner.key.new /setting/mlv2_owner.key"
+    },
+    {
+      "step": 4,
+      "label": "clear_disable",
+      "command": "/bin/busybox rm -f /setting/disable_sd_boot && /bin/busybox sync && echo STAGE_MOVED_OK"
+    },
+    {
+      "step": 5,
+      "label": "live_ld_preload_smoke_test",
+      "command": "LD_PRELOAD=/setting/mlv2_sd_boot_hook.so /bin/busybox sh -c 'echo PRELOAD_SMOKE_OK'"
+    },
+    {
+      "step": 6,
+      "label": "backup_preload",
+      "command": "if [ -f /etc/ld.so.preload ] && [ ! -f /etc/ld.so.preload.stock_bak ]; then /bin/busybox cp -f /etc/ld.so.preload /etc/ld.so.preload.stock_bak; fi"
+    },
+    {
+      "step": 7,
+      "label": "write_preload_new",
+      "command": ": > /etc/ld.so.preload.new && if [ -f /etc/ld.so.preload ]; then /bin/busybox grep -vx '/setting/mlv2_sd_boot_hook.so' /etc/ld.so.preload >> /etc/ld.so.preload.new || true; fi && echo '/setting/mlv2_sd_boot_hook.so' >> /etc/ld.so.preload.new"
+    },
+    {
+      "step": 8,
+      "label": "activate_preload",
+      "command": "/bin/busybox chmod 644 /etc/ld.so.preload.new && /bin/busybox mv -f /etc/ld.so.preload.new /etc/ld.so.preload && /bin/busybox sync && /bin/busybox cat /etc/ld.so.preload"
+    },
+    {
+      "step": 9,
+      "label": "post_preload_sanity",
+      "command": "/bin/busybox echo POST_PRELOAD_OK"
+    }
+  ],
+  "steps": [
+    {
+      "step": 0,
+      "label": "disable_histfile",
+      "bytes": 189,
+      "elapsed_seconds": 0.12,
+      "deadline_seconds": 10,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.12
+    },
+    {
+      "step": 1,
+      "label": "read_mounts",
+      "bytes": 1800,
+      "elapsed_seconds": 0.062,
+      "deadline_seconds": 12,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.062
+    },
+    {
+      "step": 2,
+      "label": "chmod_staged",
+      "bytes": 348,
+      "elapsed_seconds": 0.134,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.134
+    },
+    {
+      "step": 3,
+      "label": "move_staged",
+      "bytes": 497,
+      "elapsed_seconds": 0.218,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.218
+    },
+    {
+      "step": 4,
+      "label": "clear_disable",
+      "bytes": 277,
+      "elapsed_seconds": 0.094,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.092
+    },
+    {
+      "step": 5,
+      "label": "live_ld_preload_smoke_test",
+      "bytes": 275,
+      "elapsed_seconds": 0.084,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.083
+    },
+    {
+      "step": 6,
+      "label": "backup_preload",
+      "bytes": 323,
+      "elapsed_seconds": 0.11,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.11
+    },
+    {
+      "step": 7,
+      "label": "write_preload_new",
+      "bytes": 421,
+      "elapsed_seconds": 0.162,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.162
+    },
+    {
+      "step": 8,
+      "label": "activate_preload",
+      "bytes": 377,
+      "elapsed_seconds": 0.194,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.194
+    },
+    {
+      "step": 9,
+      "label": "post_preload_sanity",
+      "bytes": 221,
+      "elapsed_seconds": 0.058,
+      "deadline_seconds": 15,
+      "deadline_exceeded": false,
+      "ack_committed_at_seconds": 0.058
+    }
+  ],
+  "terminal_toggles": [
+    {
+      "phase": "pre_disable",
+      "enable": false,
+      "ok": true,
+      "packets": [
+        {
+          "kind": "terminal",
+          "function": "0x10",
+          "payload": "0000f10000",
+          "ok": true,
+          "response": 1,
+          "error": null
+        },
+        {
+          "kind": "terminal",
+          "function": "0x40",
+          "payload": "01061f0000",
+          "ok": true,
+          "response": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "phase": "enable",
+      "enable": true,
+      "ok": true,
+      "packets": [
+        {
+          "kind": "terminal",
+          "function": "0x10",
+          "payload": "0000f10001",
+          "ok": true,
+          "response": 1,
+          "error": null
+        },
+        {
+          "kind": "terminal",
+          "function": "0x40",
+          "payload": "01061f0002",
+          "ok": true,
+          "response": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "phase": "disable",
+      "enable": false,
+      "ok": true,
+      "packets": [
+        {
+          "kind": "terminal",
+          "function": "0x10",
+          "payload": "0000f10000",
+          "ok": true,
+          "response": 1,
+          "error": null
+        },
+        {
+          "kind": "terminal",
+          "function": "0x40",
+          "payload": "01061f0000",
+          "ok": true,
+          "response": 0,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "terminal_disable_verified": true,
+  "live_preload_smoke_passed": true,
+  "install_verified": true,
+  "note": "Owner-authorized Phase B flash install writes only the 4 /setting/mlv2_* files and /etc/ld.so.preload (after passing a live LD_PRELOAD=/setting/mlv2_sd_boot_hook.so smoke check). Stock Sony Senser auth/FileControl may also update /setting/.etools.",
+  "service_stop_transport": {
+    "attempted": true,
+    "observed": true,
+    "transport_ok": false,
+    "camera_exit_confirmed": false,
+    "driver_class": "GenericUsbDriver",
+    "error": "GenericUsbException: "
+  },
+  "phase": "diagnostic_finished",
+  "model": "DSC-RX100M7",
+  "service_authenticated": true,
+  "build": "29110_03.2021050601",
+  "preload_before_status": 130,
+  "preload_before_lines": [],
+  "staged_files": {
+    "/setting/mlv2_sd_boot_hook.so": {
+      "bytes": 2436,
+      "sha256": "0cae4d4a0264952ad4ce0ef3a6f5764f8ad743d9c1e2ce6c6d034c0820281c32"
+    },
+    "/setting/mlv2_sd_boot.sh": {
+      "bytes": 19213,
+      "sha256": "87cf24059f352d110e6624d9d41f75a1fd30e128eef0d61c5dc7631502e0f93f"
+    },
+    "/setting/mlv2_card_read.elf": {
+      "bytes": 13760,
+      "sha256": "1f8bbd8fe627a24a4c115d8fdd7d6033eb8bfd40964b8de26c7082a5d4752b0f"
+    },
+    "/setting/mlv2_owner.key": {
+      "bytes": 32,
+      "sha256": "redacted_owner_key"
+    }
+  },
+  "shell_banner": "[  139.194137] console [usbgcon-1] enabled\n[  139.195897] [usbter usbg_sen_ldisc_open][165]exit\n\r\n\r\nBusyBox v1.13.4 (2018-04-24 02:24:46 JST) built-in shell (ash)\r\nEnter 'help' for a list of built-in commands.\r\n\r\nash: can't access tty; job control turned off\r\n/usr/share/app # ",
+  "mounts_raw": "rootfs / rootfs rw 0 0\nproc /proc proc rw,relatime 0 0\n/dev/nflasha7 / ext2 ro,relatime,errors=continue 0 0\n/dev/nflasha15 /usr ext2 ro,relatime,errors=continue 0 0\n/dev/nflasha10 /tmp vfat rw,sync,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha10 /etc vfat rw,sync,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha3 /system vfat rw,sync,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha2 /setting vfat rw,sync,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha18 /lens vfat rw,sync,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha12 /cert vfat rw,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,batch_sync,posix_attr,avoid_dlink,errors=remount-ro 0 0\n/dev/nflasha11 /log vfat rw,dirsync,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=ascii,shortname=mixed,batch_sync,posix_attr,avoid_dlink,errors=remount-ro 0 0\nnone /sys sysfs rw,relatime 0 0\nnone /dev/pts devpts rw,relatime,mode=600 0 0\nnone /tmp_ipsec tmpfs rw,sync,dirsync,noatime,size=128k 0 0\nnone /tmp_network tmpfs rw,sync,dirsync,noatime,size=1024k 0 0\nnone /tmp_bt tmpfs rw,sync,dirsync,noatime,size=1024k 0 0\n",
+  "mounts_verified": true,
+  "setting_files_installed": true,
+  "live_preload_smoke_output": "PRELOAD_SMOKE_OK",
+  "preload_after_lines": [
+    "/setting/mlv2_sd_boot_hook.so"
+  ],
+  "post_preload_sanity_ok": true,
+  "terminal_disable_requested": true,
+  "service_stop_requested": true,
+  "service_stop_transport_ok": false,
+  "install_ok": true
+}
