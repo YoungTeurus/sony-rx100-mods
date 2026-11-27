@@ -5,7 +5,7 @@ Untethered, **battery-pull persistent** JPEG **Pre-Capture** with a **native 7th
 Once installed (one-time 5-file setup — zero modifications to factory WBI, kernel, `initrd.img`, `/usr`, or `Backup.bin`):
 - **Survives both Power Switch (S2R) and Battery Removal (WBI):** turns on automatically with your signed SD card (`MLV2.TAR`), no phone or laptop needed.
 - **Native 7th `Mods` Menu Tab:** configure **Pre-Capture ON / OFF** and **Pre-Frames (`1 / 2 / 3 / 5 / 8 / 10`)** directly inside the camera's own menu. Settings are remembered across power cycles and battery swaps (`/setting/mlv2_precap.cfg`), and stock **Release w/o Card** stays untouched.
-- **True Zero-Card-Write Ring Buffer:** half-press in Continuous Shooting tracks focus and rolls full-resolution `5472 × 3648` JPEGs inside camera RAM (evicting the oldest frames) with **zero SD card writes during the hold**. Full-press saves the last `N` pre-shutter frames plus hold-driven post-shutter frames as standard `PC*.JPG` files; releasing half-press cancels cleanly with zero files written.
+- **True Zero-Card-Write Ring Buffer:** half-press in Continuous Shooting tracks focus and rolls full-resolution `5472 × 3648` JPEGs inside camera RAM (evicting the oldest frames) with **zero SD card writes during the hold**. Full-press saves the last `N` pre-shutter frames plus hold-driven post-shutter frames as `PC*.JPG` files in the SD card root; releasing half-press cancels cleanly with zero files written.
 - **Instant Return to Stock:** remove the SD card (or place an empty `MLV2.OFF` file at SD root) and the camera boots 100% stock (6 tabs). Re-inserting the SD card automatically re-enables the `Mods` tab with your saved settings.
 - **Safe & Reversible:** includes a mandatory live `LD_PRELOAD` smoke test before writing `/etc/ld.so.preload`, a one-command `--mode uninstall`, and a shell-free `--mode emergency-filecontrol-uninstall`.
 
@@ -110,7 +110,7 @@ LIVE_PRELOAD_SMOKE_PASSED=True
    - Set **Mod Status** = `ON`.
    - Set **Pre-Frames** = `1`, `2`, `3`, `5`, `8`, or `10`.
 4. **Shoot untethered:**
-   - **Pre-Capture SAVE:** In `Continuous Shooting`, hold the shutter halfway (~1–10 s to fill and roll the RAM ring), then press fully and hold for post-shutter frames. Release and wait for card save to finish (`PC*.JPG` files in standard `DCIM/`).
+   - **Pre-Capture SAVE:** In `Continuous Shooting`, hold the shutter halfway (~1–10 s to fill and roll the RAM ring), then press fully and hold for post-shutter frames. Release and wait for card save to finish — both the `N` pre-shutter frames and all hold-driven post-shutter frames from that burst are saved together as `PC*.JPG` files in the **SD card root** (outside `DCIM/`, so view them on a computer/phone rather than stock in-camera Playback).
    - **Pre-Capture CANCEL:** Hold halfway, then release without full-press (~12 s drain; writes 0 files).
    - **Power Switch (S2R):** Turning the camera off/on with the normal power switch keeps `/tmp_bt`, the `Mods` tab, and your daemon running immediately with zero 25 s wait.
    - **Battery Pull (WBI):** Changing batteries automatically reloads `Mods` (~25–30 s after power-on) and restores your last saved `ON/OFF` and `Pre-Frames` state.
